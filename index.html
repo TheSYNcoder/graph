@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="js/cell.js"></script>
+    <script src="js/connection.js"></script>
+    <script src="js/sketch.js"></script>
+    
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/" style="text-decoration: none; ">
+                <strong class="is-size-1">Graph Generator</strong>
+            </a>
+    
+        </div>
+    </nav>
+
+    <article id="art" class="message is-dark">
+        <div class="message-header">
+            <p>General Instructions</p>
+            <button class="delete" aria-label="delete" id="delete"></button>
+        </div>
+        <div class="message-body">
+            This is  a graph generating website useful for visualizing graphs during competitive programming.
+            You are required to enter <strong>Number of nodes</strong> and <strong>Number of edges</strong> in a single line.
+            Say those are <strong>n</strong> and <strong>m</strong> . Now following you should enter <strong>m</strong> lines each containing 
+            two integers <strong>u</strong> and <strong>v</strong> where u and v detects that there is an undirected edge, and each of u and v should be less than n.
+            <strong>Please note all data should be numeric and must be integers !</strong>
+
+        </div>
+    </article>
+
+    <div class="field">
+        <div class="control">
+            <textarea name="text" id="getinput" class="textarea is-rounded" 
+            placeholder="  All data should be numeric &#13;&#10; no of nodes , no of edges(m) &#13;&#10; followed by m lines with two integers in each representing an edge"></textarea>
+            <button  id="do" class="button is-success" style="margin-top: 2em;">Generate</button>
+        </div>
+    </div>
+    
+    <div id="sketch">
+        <!-- P5 sketch here -->
+    </div>
+
+    <div style="margin-top: 4em; margin-bottom: 4em;"></div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Graph</strong> by <a href="https://github.com/thesyncoder">Shuvayan</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
+            </p>
+            <p>Made with ❤️ by Shuvayan using P5.js and Bulma</p>
+        </div>
+    </footer>
+
+    
+     <script src="js/script.js"></script>
+    
+</body>
+
+</html>

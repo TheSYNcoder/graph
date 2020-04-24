@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.field{
+  height:5em;
+  margin:5em;
+  box-sizing: border-box;
+}
+#getinput {
+  width:auto;
+  height:auto;
+  
+}
+#art{
+  margin:5em;
+  box-sizing: border-box;
+}
+
+#sketch{
+  height:20em;
+  width: 100%;
+  display: flex;
+  margin-top: 15em;
+  margin-bottom: 30em;
+  
+
+  box-sizing: border-box;
+  
+  box-shadow: 3px solid black;
+  justify-content: center;
+  
+}
